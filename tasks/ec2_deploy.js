@@ -52,8 +52,8 @@ module.exports = function(grunt){
             util.format('sudo rm -rf `ls -t %s | tail -n +11`', versions),
             util.format('sudo npm --prefix %s install --production --loglevel %s', dest, verbosity),
             util.format('sudo ln -sfn %s %s', dest, target),
-            commands.pm2_reload(),
-            commands.pm2_start(name)
+            //commands.pm2_reload(),
+            //commands.pm2_start(name)
         ], iif('NGINX_ENABLED', [
             'sudo nginx -s reload'
         ])];
@@ -84,7 +84,8 @@ module.exports = function(grunt){
             ssh([
                 'tail -3 /var/log/nginx/error.log',
                 'sudo pm2 flush',
-                'sudo pm2 list'
+                'sudo pm2 list',
+                'sudo pm2 restart all'
             ], name, done);
         }
     });

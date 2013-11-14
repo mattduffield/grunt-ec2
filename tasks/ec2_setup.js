@@ -31,7 +31,7 @@ module.exports = function(grunt){
             'sudo cp /tmp/sysctl.conf /etc/',
             'sudo sysctl -p /etc/sysctl.conf'
         ], [ // forward port 80
-            forwardPort(80, 8080)
+            forwardPort(80, 3000)
         ], workflow.if_has('SSL_ENABLED', // forward port 443
             forwardPort(443, 8433)
         ), [ // rsync

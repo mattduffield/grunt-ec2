@@ -1,17 +1,17 @@
 {
-  "name": "grunt-ec2",
+  "name": "grunt-ec2-2",
   "description": "Grunt tasks to create, terminate, and deploy to AWS EC2 instances",
-  "homepage": "https://github.com/bevacqua/grunt-ec2",
+  "homepage": "https://github.com/mattduffield/grunt-ec2",
   "author": {
-    "name": "Nicolas Bevacqua",
-    "email": "ng@bevacqua.io",
-    "url": "http://bevacqua.io"
+    "name": "Matt Duffield",
+    "email": "matt.duffield@gmail.com",
+    "url": "http://mattduffield.wordpress.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bevacqua/grunt-ec2.git"
+    "url": "git://github.com/mattduffield/grunt-ec2.git"
   },
-  "version": "0.4.6",
+  "version": "0.4.7",
   "licenses": "MIT",
   "keywords": [
     "gruntplugin",
